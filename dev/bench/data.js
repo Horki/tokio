@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610399443671,
+  "lastUpdate": 1610399447239,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1123,6 +1123,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19153793,
             "range": "± 2780219",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "40d959263bc16771882b2d1c9356f1ec02957c3d",
+          "message": "macros: fix unused_braces in generated code (#3404)",
+          "timestamp": "2021-01-11T19:20:40+09:00",
+          "tree_id": "b7fc026d9435a2c7ce532071d3728ee9c5552c05",
+          "url": "https://github.com/Horki/tokio/commit/40d959263bc16771882b2d1c9356f1ec02957c3d"
+        },
+        "date": 1610399442846,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 155968,
+            "range": "± 20233",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 586064,
+            "range": "± 53197",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4717417,
+            "range": "± 863120",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17703168,
+            "range": "± 2881366",
             "unit": "ns/iter"
           }
         ]
