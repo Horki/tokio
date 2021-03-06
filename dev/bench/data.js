@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614997478019,
+  "lastUpdate": 1615035293958,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1327,6 +1327,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 17911175,
             "range": "± 2076693",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "constantin.nickel@gmail.com",
+            "name": "nickelc",
+            "username": "nickelc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "704de8c01b331c2651c0cdb0d5ec6b0657e14344",
+          "message": "stream: remove duplicate `doc(test(..))` & `cfg_attr` declarations (#3571)",
+          "timestamp": "2021-03-06T20:54:28+09:00",
+          "tree_id": "05cfb9504112210a7d4e372c30c16177aee4ee59",
+          "url": "https://github.com/Horki/tokio/commit/704de8c01b331c2651c0cdb0d5ec6b0657e14344"
+        },
+        "date": 1615035293070,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 179485,
+            "range": "± 28906",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 671083,
+            "range": "± 121185",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4252306,
+            "range": "± 658199",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19221693,
+            "range": "± 1998906",
             "unit": "ns/iter"
           }
         ]
