@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615489015986,
+  "lastUpdate": 1615489052414,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -3521,6 +3521,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 841926,
             "range": "± 177044",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zaharidichev@gmail.com",
+            "name": "Zahari Dichev",
+            "username": "zaharidichev"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "edfff7551abc24e6d6ee5e0dc8e894cf1309a53d",
+          "message": "util: anotate time module as requiring time feature (#3606)\n\nSigned-off-by: Zahari Dichev <zaharidichev@gmail.com>",
+          "timestamp": "2021-03-11T16:02:01+01:00",
+          "tree_id": "a2a71b1a527cc8cdb62c8b82081da5c9e003bfc3",
+          "url": "https://github.com/Horki/tokio/commit/edfff7551abc24e6d6ee5e0dc8e894cf1309a53d"
+        },
+        "date": 1615489051594,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7019022,
+            "range": "± 2480467",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6471366,
+            "range": "± 2056963",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6603263,
+            "range": "± 2550319",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 862,
+            "range": "± 145",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 838,
+            "range": "± 196",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 851,
+            "range": "± 141",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 135583,
+            "range": "± 16887",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1815,
+            "range": "± 422",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1107776,
+            "range": "± 118536",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 737434,
+            "range": "± 167247",
             "unit": "ns/iter"
           }
         ]
