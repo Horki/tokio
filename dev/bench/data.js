@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616812705390,
+  "lastUpdate": 1616812709803,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -809,6 +809,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 567,
             "range": "± 301",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "724ba348d1754deb29efa70852d0a745f3b0d90e",
+          "message": "chore: fix warning from new Rust version (#3647)",
+          "timestamp": "2021-03-26T19:22:43+09:00",
+          "tree_id": "3714a7b2697ec4f4f53c8275774ef23a92372496",
+          "url": "https://github.com/Horki/tokio/commit/724ba348d1754deb29efa70852d0a745f3b0d90e"
+        },
+        "date": 1616812708580,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 916,
+            "range": "± 118",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14996,
+            "range": "± 3677",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 968,
+            "range": "± 182",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15646,
+            "range": "± 7152",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 513,
+            "range": "± 78",
             "unit": "ns/iter"
           }
         ]
