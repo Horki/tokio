@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1620143510907,
+  "lastUpdate": 1622753756297,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -971,6 +971,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 581,
             "range": "± 147",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2",
+          "message": "macros: suppress clippy::default_numeric_fallback lint in generated code (#3831)",
+          "timestamp": "2021-06-02T18:16:23+09:00",
+          "tree_id": "9d4afa2a70f19ef453794a3df3368a259a27e377",
+          "url": "https://github.com/Horki/tokio/commit/9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2"
+        },
+        "date": 1622753754978,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 640,
+            "range": "± 173",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 12802,
+            "range": "± 2480",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 696,
+            "range": "± 176",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 12962,
+            "range": "± 2866",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 447,
+            "range": "± 80",
             "unit": "ns/iter"
           }
         ]
