@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622753756297,
+  "lastUpdate": 1622753766787,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1891,6 +1891,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19236639,
             "range": "± 2315709",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "te316e89@gmail.com",
+            "name": "Taiki Endo",
+            "username": "taiki-e"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2",
+          "message": "macros: suppress clippy::default_numeric_fallback lint in generated code (#3831)",
+          "timestamp": "2021-06-02T18:16:23+09:00",
+          "tree_id": "9d4afa2a70f19ef453794a3df3368a259a27e377",
+          "url": "https://github.com/Horki/tokio/commit/9d8b37d51a7d0cdf5a0fbf754240c929fb69e9f2"
+        },
+        "date": 1622753765393,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 203347,
+            "range": "± 84750",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 721524,
+            "range": "± 303789",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5301830,
+            "range": "± 1285423",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21376265,
+            "range": "± 3572973",
             "unit": "ns/iter"
           }
         ]
