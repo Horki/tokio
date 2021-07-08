@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1622753805704,
+  "lastUpdate": 1625764994416,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1025,6 +1025,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 447,
             "range": "± 80",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "zonyitoo@users.noreply.github.com",
+            "name": "ty",
+            "username": "zonyitoo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c306bf853a1f8423b154f17fa47926f04eecd9b4",
+          "message": "net: allow customized I/O operations for TcpStream (#3888)",
+          "timestamp": "2021-07-08T13:02:40+02:00",
+          "tree_id": "072d2de21dbb7e581c735b1368c2fa917dda99e6",
+          "url": "https://github.com/Horki/tokio/commit/c306bf853a1f8423b154f17fa47926f04eecd9b4"
+        },
+        "date": 1625764993616,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 757,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13412,
+            "range": "± 3567",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 679,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14225,
+            "range": "± 3480",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 490,
+            "range": "± 15",
             "unit": "ns/iter"
           }
         ]
