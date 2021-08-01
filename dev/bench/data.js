@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625765028986,
+  "lastUpdate": 1627848497033,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2041,6 +2041,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19876421,
             "range": "± 4002317",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "asomers@gmail.com",
+            "name": "Alan Somers",
+            "username": "asomers"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf02b3f32d12223283d475f65ccf9301a9a2b951",
+          "message": "fs: reorganize tokio::fs::file's mock tests (#3988)",
+          "timestamp": "2021-07-31T09:55:32+02:00",
+          "tree_id": "6e87a6131d69774f6b0de702b855d8529659a8df",
+          "url": "https://github.com/Horki/tokio/commit/cf02b3f32d12223283d475f65ccf9301a9a2b951"
+        },
+        "date": 1627848496191,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 231871,
+            "range": "± 35938",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 1196241,
+            "range": "± 216272",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 6921945,
+            "range": "± 1580693",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20231665,
+            "range": "± 4347640",
             "unit": "ns/iter"
           }
         ]
