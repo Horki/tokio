@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1627848540662,
+  "lastUpdate": 1629066564995,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2143,6 +2143,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20231665,
             "range": "± 4347640",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c19b5a162b37eeb5b713549e06dc78399bfc9ae",
+          "message": "time: make Sleep examples easier to find (#4040)",
+          "timestamp": "2021-08-15T19:24:04+02:00",
+          "tree_id": "9b109b86d6ccc49497dc77bfd1e224c941c5e7e8",
+          "url": "https://github.com/Horki/tokio/commit/5c19b5a162b37eeb5b713549e06dc78399bfc9ae"
+        },
+        "date": 1629066564192,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 187909,
+            "range": "± 39350",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 953807,
+            "range": "± 151840",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 6127847,
+            "range": "± 1501441",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17150889,
+            "range": "± 1927298",
             "unit": "ns/iter"
           }
         ]
