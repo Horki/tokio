@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631010715936,
+  "lastUpdate": 1631010724851,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2299,6 +2299,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 17150889,
             "range": "± 1927298",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tobz@users.noreply.github.com",
+            "name": "Toby Lawrence",
+            "username": "tobz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "01a6feb0dcbac8e960cc63c709be7fe8506ff107",
+          "message": "chore: prepare tokio-util v0.6.8 (#4087)\n\nSigned-off-by: Toby Lawrence <toby@nuclearfurnace.com>",
+          "timestamp": "2021-09-03T10:57:27-04:00",
+          "tree_id": "420c45864980a32626297ebc5bfebb44022a86fd",
+          "url": "https://github.com/Horki/tokio/commit/01a6feb0dcbac8e960cc63c709be7fe8506ff107"
+        },
+        "date": 1631010723111,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 233868,
+            "range": "± 31770",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 1048227,
+            "range": "± 113275",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 6861049,
+            "range": "± 1858304",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20285999,
+            "range": "± 3984082",
             "unit": "ns/iter"
           }
         ]
