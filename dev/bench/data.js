@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1631010701414,
+  "lastUpdate": 1631010715936,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5393,6 +5393,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 792277,
             "range": "± 123152",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tobz@users.noreply.github.com",
+            "name": "Toby Lawrence",
+            "username": "tobz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "01a6feb0dcbac8e960cc63c709be7fe8506ff107",
+          "message": "chore: prepare tokio-util v0.6.8 (#4087)\n\nSigned-off-by: Toby Lawrence <toby@nuclearfurnace.com>",
+          "timestamp": "2021-09-03T10:57:27-04:00",
+          "tree_id": "420c45864980a32626297ebc5bfebb44022a86fd",
+          "url": "https://github.com/Horki/tokio/commit/01a6feb0dcbac8e960cc63c709be7fe8506ff107"
+        },
+        "date": 1631010715026,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6740005,
+            "range": "± 2904358",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5877285,
+            "range": "± 3550359",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6180654,
+            "range": "± 2529218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 232,
+            "range": "± 0",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 232,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 232,
+            "range": "± 1",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 25143,
+            "range": "± 157",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 763,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 882968,
+            "range": "± 3709",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 674485,
+            "range": "± 2459",
             "unit": "ns/iter"
           }
         ]
