@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1629066619288,
+  "lastUpdate": 1631010696618,
   "repoUrl": "https://github.com/Horki/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1187,6 +1187,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 428,
             "range": "± 41",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "tobz@users.noreply.github.com",
+            "name": "Toby Lawrence",
+            "username": "tobz"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "01a6feb0dcbac8e960cc63c709be7fe8506ff107",
+          "message": "chore: prepare tokio-util v0.6.8 (#4087)\n\nSigned-off-by: Toby Lawrence <toby@nuclearfurnace.com>",
+          "timestamp": "2021-09-03T10:57:27-04:00",
+          "tree_id": "420c45864980a32626297ebc5bfebb44022a86fd",
+          "url": "https://github.com/Horki/tokio/commit/01a6feb0dcbac8e960cc63c709be7fe8506ff107"
+        },
+        "date": 1631010695748,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 707,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14032,
+            "range": "± 5235",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 720,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 12757,
+            "range": "± 3980",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 447,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
